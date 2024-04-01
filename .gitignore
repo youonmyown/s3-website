@@ -8,3 +8,4 @@ index.html
 error.html
 terraform.tfstate.backup
 .terraform.tfstate.lock.info
+.terraform/modules/modules.json
