@@ -7,3 +7,4 @@ terraform.tfstate
 index.html
 error.html
 terraform.tfstate.backup
+.terraform.tfstate.lock.info
