@@ -32,7 +32,7 @@ jobs:
 
     - name: Terraform Apply
       if: success()
-      run: terraform apply tfplan -auto-approve
+      run: terraform apply tfplan
 
     - name: Terraform Destroy
       if: failure()
