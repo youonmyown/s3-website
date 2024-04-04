@@ -41,6 +41,9 @@ jobs:
       if: success()
       run: terraform apply tfplan
 
-    - name: Terraform Destroy
+    - name: Wait for 20sec before Terraform Destroy
       if: success()
+      run: sleep 20s
+
+    - name: Terraform Destroy
       run: terraform destroy -auto-approve
