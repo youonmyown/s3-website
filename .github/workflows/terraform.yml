@@ -56,7 +56,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: terraform
     # if: success() && needs.terraform.outputs.terraform_apply == 'success'
-    if: always()
+    if: success()
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
