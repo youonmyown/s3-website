@@ -69,4 +69,4 @@ jobs:
         aws-region: ${{ secrets.REGION }}
   
     - name: Copy files to S3
-      run: aws s3 cp --recursive ./website/ s3://${{ secrets.BUCKET_NAME }}
+      run: aws s3 cp --recursive ./website/ s3://${{ secrets.BUCKET_NAME }}    
